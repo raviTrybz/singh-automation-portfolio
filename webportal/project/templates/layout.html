@@ -1,0 +1,50 @@
+<!-- pythonapp/templates/layout.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Web Portal{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Web Portal</h1>
+        <p id="name">Ravinder Singh</p>
+        <p id="visa-status">Australian Citizen</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <!-- Add new links for Portfolio and Interactive Resume -->
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'interactive_resume' %}">Interactive Resume</a></li>
+            <li><a href="{% url 'snake_game' %}">Snake Game</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; Ravinder Singh 0416511004</p>
+    </footer>
+    <!-- Add this line to include jQuery from the CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        // Use jQuery to scroll to the top of the page on each page load (refresh)
+        $(document).ready(function () {
+            $(window).scrollTop(0);
+        });
+    </script>
+
+</body>
+
+</html>
