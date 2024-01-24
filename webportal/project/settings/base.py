@@ -1,6 +1,9 @@
-import os
-BASE_DIR = Path(__file__).resolve().parent.parent
+# Change from block comment with 'your block comment' to start with '#'
+# your block comment
+# import os
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = NotImplemented
 DEBUG = False
@@ -97,7 +100,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'  # Changed from 'static/' to '/static/'
 STATIC_ROOT = BASE_DIR / 'static/'  # type: ignore # noqa: F821
 
 # Default primary key field type
@@ -106,5 +109,5 @@ STATIC_ROOT = BASE_DIR / 'static/'  # type: ignore # noqa: F821
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "webportal/project/static",
+    BASE_DIR / 'webportal/project/static',
 ]
