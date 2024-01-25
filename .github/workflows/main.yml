@@ -1,6 +1,5 @@
 name: Continuous Integration
 
-
 on:
   push:
     branches:
@@ -13,7 +12,7 @@ concurrency:
 
 
 
-jobs: 
+jobs:
   quality-assurance:
     name: Quality Assurance
     uses: ./.github/workflows/pr.yml
@@ -44,4 +43,4 @@ jobs:
           END
       - name: Run deploy
         run: |
-          ssh target "cd singh-automation-portfolio/ && docker-compose down && git pull && docker-compose build && docker-compose up -d --force-recreate"    
+          ssh target "cd singh-automation-portfolio/ && docker-compose down && git pull && docker-compose build && docker-compose up -d --force-recreate"
