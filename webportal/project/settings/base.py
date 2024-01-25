@@ -101,7 +101,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'  # Changed from 'static/' to '/static/'
-STATIC_ROOT = BASE_DIR / 'static/'  # type: ignore # noqa: F821
+# STATIC_ROOT = '/home/ravi/Projects/Webportal-Portfolio/webportal/project/static/'  # Absolute path to the directory where 'collectstatic' will collect static files  # type: ignore # noqa: F821
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

@@ -3,13 +3,12 @@ name: Continuous Integration
 on:
   push:
     branches:
-      -master
+      -main
 
 
 concurrency:
   group: master
   cancel-in-progress: true
-
 
 
 jobs:
