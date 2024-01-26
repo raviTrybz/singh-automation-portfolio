@@ -1,21 +1,16 @@
-name: Continuous Integration
+name: Continuous integration
 
 on:
   push:
     branches:
-      -main
+      - main
 
-
-concurrency:
-  group: master
-  cancel-in-progress: true
-
+concurrency: main
 
 jobs:
   quality-assurance:
     name: Quality Assurance
     uses: ./.github/workflows/pr.yml
-
 
   deploy:
     name: Deploy

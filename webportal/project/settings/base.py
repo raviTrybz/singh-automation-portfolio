@@ -1,8 +1,3 @@
-import os
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
-
 SECRET_KEY = NotImplemented
 DEBUG = False
 
@@ -99,12 +94,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'  # Changed from 'static/' to '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # type: ignore # noqa: F821
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # type: ignore # noqa: F821
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'webportal/project/static',
-]
+# STATICFILES_DIRS = [
+ #   BASE_DIR / 'webportal/project/static',
+# ]
