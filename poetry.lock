@@ -1693,6 +1693,17 @@ files = [
 ]
 
 [[package]]
+name = "split-settings"
+version = "1.0.0"
+description = "Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files."
+optional = false
+python-versions = ">=3.6,<4.0"
+files = [
+    {file = "split_settings-1.0.0-py3-none-any.whl", hash = "sha256:78904bbbaaaa400d9a5ebc4ac316cbd322f8042ee70ecbcfb60b5ddd8adcd2d2"},
+    {file = "split_settings-1.0.0.tar.gz", hash = "sha256:01bf629db64b4fab5d7e78fe3064fee08761f97d382fd38bea87c9772c5ab247"},
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -1973,4 +1984,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "a21aa577de6b7e0d71bf46dcd5bd82218f5f1527b28a450ca54db21ddbbdc823"
+content-hash = "1059aa31d41016022e2568e0fe5759689cfe36a26f4a0587fed248ef399a9d35"
