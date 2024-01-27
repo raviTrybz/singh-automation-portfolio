@@ -107,5 +107,5 @@ STATIC_ROOT = '/opt/project/staticfiles'  # type: ignore # noqa: F821
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    '/home/ravi/Projects/Webportal-Portfolio/webportal/project/static',
+    'webportal/project/static',
 ]
