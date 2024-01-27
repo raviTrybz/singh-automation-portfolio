@@ -106,4 +106,4 @@ STATIC_ROOT = '/opt/project/static'  # type: ignore # noqa: F821
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = [BASE_DIR / 'webportal/project/static']
+STATICFILES_DIRS = [BASE_DIR / 'webportal/project/staticfiles']
