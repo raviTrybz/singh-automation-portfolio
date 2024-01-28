@@ -107,5 +107,5 @@ STATIC_URL = '/static/'  # Changed from 'static/' to '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-     'webportal/project/static',
+    'webportal/project/static',
 ]
