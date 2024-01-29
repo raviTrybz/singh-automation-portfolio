@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 SECRET_KEY = NotImplemented
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['singh-automation.com', '127.0.0.1']
 
 # Application definition
 
