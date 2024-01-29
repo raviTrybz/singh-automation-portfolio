@@ -6,8 +6,6 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONPATH .
 ENV WEBPORTAL_PORTFOLIO_SETTING_IN_DOCKER true
-# New environment variable for static root in Docker
-ENV WEBPORTAL_PORTFOLIO_STATIC_ROOT /opt/project/webportal/project/static
 
 RUN set -xe \
     && apt-get update \
