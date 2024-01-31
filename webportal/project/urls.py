@@ -12,7 +12,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('portfolio/', views.portfolio, name='portfolio'),
     path('interactive_resume/', views.interactive_resume, name='interactive_resume'),
-    path('snake_game/', views.snake_game, name='snake_game'),
+    # path('snake_game/', views.snake_game, name='snake_game'),
 ]
 
 # Add static URL patterns only after defining urlpatterns

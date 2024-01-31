@@ -23,5 +23,5 @@ def interactive_resume(request):
     return render(request, 'interactive_resume.html')
 
 
-def snake_game(request):
-    return render(request, 'snake_game.html')
+# def snake_game(request):
+#    return render(request, 'snake_game.html')
